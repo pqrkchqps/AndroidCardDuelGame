@@ -1,0 +1,19 @@
+Brainstorm:
+
+class CardType{
+  id
+  stats
+}
+
+Class RandomCardTypes{
+  vector<CardTypes*> cards[6];
+  int getRandomIndex();
+  CardType* getNthCardType(int n;)
+}
+
+Class CardOnGameBoard :Sprite {
+  CardAtPosition(int position, RandomCardTypes);
+  CreateAndDrawCardSprite()
+  UpdateCardType();
+  onTouchEnded(listener)
+}
