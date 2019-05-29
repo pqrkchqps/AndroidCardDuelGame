@@ -102,7 +102,7 @@ bool HelloWorld::init()
     DelegateSocketIO* delegate = new DelegateSocketIO();
 
     cocos2d::network::SocketIO* socketIO = cocos2d::network::SocketIO::getInstance();
-    cocos2d::network::SIOClient* sio_client = socketIO->connect("10.129.120.249:9000/", * delegate);
+    cocos2d::network::SIOClient* sio_client = socketIO->connect("192.168.0.27:9000/", * delegate);
     //std::string examplestring = "tom";
 
     //sio_client->send(examplestring);

@@ -35,10 +35,10 @@
 class SocketIOTest: public cocos2d::Scene, public cocos2d::network::SocketIO::SIODelegate
 {
 public:
-    //CREATE_FUNC(SocketIOTest);
+  //CREATE_FUNC(SocketIOTest);
 
-    SocketIOTest();
-    virtual ~SocketIOTest();
+  SocketIOTest();
+  virtual ~SocketIOTest();
 
 	/**
 	*  @brief Used for network level socket close (not for disconnect from the socket.io server)
