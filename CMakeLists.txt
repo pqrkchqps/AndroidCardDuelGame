@@ -48,28 +48,34 @@ endif()
 
 # add cross-platforms source files and header files
 list(APPEND GAME_SOURCE
-     Classes/AppDelegate.cpp
-     Classes/HelloWorldScene.cpp
-     Classes/DebugQueue.cpp
-     Classes/SocketIOTest.cpp
-     Classes/VisibleRect.cpp
-     )
+    Classes/DuelComputerScene.cpp
+    Classes/LoginMenuScene.cpp
+    Classes/MatchSelectMenuScene.cpp
+    Classes/AppDelegate.cpp
+    Classes/MainMenuScene.cpp
+    Classes/DebugQueue.cpp
+    Classes/SocketIOTest.cpp
+    Classes/VisibleRect.cpp
+    )
 list(APPEND GAME_HEADER
-     Classes/AppDelegate.h
-     Classes/HelloWorldScene.h
-     Classes/DebugQueue.h
-     Classes/CardType.h
-     Classes/RandomCardTypes.h
-     Classes/CardBlind.h
-     Classes/CardBlue.h
-     Classes/CardDodge.h
-     Classes/CardHealingPotion.h
-     Classes/CardPoison.h
-     Classes/CardWhite.h
-     Classes/CardOnGameBoard.h
-     Classes/SocketIOTest.h
-     Classes/VisibleRect.h
-     )
+    Classes/DuelComputerScene.h
+    Classes/LoginMenuScene.h
+    Classes/MatchSelectMenuScene.h
+    Classes/AppDelegate.h
+    Classes/MainMenuScene.h
+    Classes/DebugQueue.h
+    Classes/CardType.h
+    Classes/RandomCardTypes.h
+    Classes/CardBlind.h
+    Classes/CardBlue.h
+    Classes/CardDodge.h
+    Classes/CardHealingPotion.h
+    Classes/CardPoison.h
+    Classes/CardWhite.h
+    Classes/CardOnGameBoard.h
+    Classes/SocketIOTest.h
+    Classes/VisibleRect.h
+    )
 
 if(ANDROID)
     # change APP_NAME to the share library name for Android, it's value depend on AndroidManifest.xml
@@ -137,6 +143,7 @@ else()
 endif()
 
 target_link_libraries(${APP_NAME} cocos2d)
+target_link_libraries(${APP_NAME} jsoncpp)
 target_include_directories(${APP_NAME}
         PRIVATE Classes
         PRIVATE ${COCOS2DX_ROOT_PATH}/cocos/audio/include/

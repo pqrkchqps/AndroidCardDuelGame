@@ -53,7 +53,7 @@ Label* DebugQueue::returnLabel(){
     retval += this->_dq[i];
     retval += "\n";
   }
-  Label* label = Label::createWithTTF(retval,"fonts/Marker Felt.ttf", 5);
+  Label* label = Label::createWithTTF(retval,"fonts/Marker Felt.ttf", 25);
   return label;
 }
 
